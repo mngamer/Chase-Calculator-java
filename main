@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);  
+  System.out.println("Enter First number: ");
+  float n = reader.nextFloat();
+  System.out.println(n);
+  Scanner reader2 = new Scanner(System.in);
+  System.out.println("Enter second number: ");
+  
+  float o = reader2.nextFloat();
+  System.out.println(o);
+  Scanner reader3 = new Scanner(System.in);
+  System.out.println("Enter operator (+,-,*,/): ");
+  String p = reader3.nextLine();
+  
+  switch(p){
+    case "+":
+      float Sum = n + o;
+      System.out.println(Sum);
+      break;
+      
+    case "-":
+      float Diff = n - o;
+      System.out.println(Diff);
+      break;
+      
+    case "*":
+      float Product = n * o;
+      System.out.println(Product);
+      break;
+      
+    case "/":
+      float Quotient = n/o;
+      System.out.println(Quotient);
+      break;
+      
+    default:
+      System.out.println("Not a valid operator");
+      break;
+  }
+  
+  }
+}
